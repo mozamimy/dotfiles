@@ -29,7 +29,13 @@ fi
 ###########
 
 # prompt
-export PS1="[\#]\u@\h:\[\033[32m\]\W\[\033[0m\]> "
+if [ ${EUID:-${UID}} = 0 ]; then
+  # root
+  export PS1="[\#]\u@\h:\[\033[32m\]\W\[\033[0m\]> "
+else
+  # not root
+  export PS1="[\#]\u@\h:\[\033[32m\]\W\[\033[0m\]> "
+fi
 
 # language
 export LANG=en_US.UTF-8
