@@ -2,4 +2,5 @@ map j 10j
 map k 10k
 map d D
 map <C-n> gt
+map <C-x> <C-ESC>
 set disable_autofocus
