@@ -1,7 +1,6 @@
 "
 " General
 "
-
 set focuscontent
 set complete=sl
 set noscrollbars=true
