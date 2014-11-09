@@ -16,12 +16,17 @@ noremap k 5k
 "
 " Color (Based on Solarized Light)
 "
-hi Hint font-family: "Ricty"; font-size: 24px; font-weight: bold; color: #dc322f;
-hi HintElem color: #586e75; background-color: #fdf6e3;
-hi HintActive color: #586e75; background-color: #fdf6e3;
-hi ErrorMsg color:white; background-color: #dc322f;
+hi Hint font-family: "Ricty"; font-size: 13px; font-weight: bold; color: #fdf6e3; background-color: #d33682;
+hi HintElem color: #268bd2; background-color: #fdf6e3;
+hi HintActive color: #dc322f; background-color: #fdf6e3;
+hi ErrorMsg color:white; background-color: #cb4b16;
 
 "
-" Commands
+" Show the interface of Evernote Clearly
 "
-command nowbrowsing :o javascript:javascript:window.location='http://twitter.com/home?status='+encodeURIComponent("Browsing: " + document.title + " " +location.href);
+javascript <<EOM
+window.onload = function() {
+  require("chrome://readable-by-evernote/content/global.js");
+}
+EOM
+nnoremap e :js __readable_by_evernote.context_menu__call();<CR>
