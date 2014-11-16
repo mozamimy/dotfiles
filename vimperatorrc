@@ -5,6 +5,7 @@ set focuscontent
 set complete=sl
 set noscrollbars=true
 set gui=none
+set titlestring="Firefox Developer Edition"
 
 "
 " Keymaps
