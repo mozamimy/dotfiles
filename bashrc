@@ -17,7 +17,7 @@ fi
 
 # RVM
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
-PATH=$PATH:$HOME/.rvm/bin
+export PATH=$HOME/.rvm/bin:$PATH
 
 # git compl.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
