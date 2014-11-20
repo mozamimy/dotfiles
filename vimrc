@@ -1,4 +1,4 @@
-" viコンパチを殺す
+" vi コンパチを殺す
 set nocompatible
 
 " スワップファイルとバックアップファイル
@@ -25,7 +25,7 @@ set autoindent
 set expandtab
 set shiftwidth=2
 
-" 10進数として数字をインクリメント
+" 10 進数として数字をインクリメント
 set nrformats=
 
 " タブを可視化
@@ -44,14 +44,14 @@ map <C-p> :tabp <Enter>
 " 検索結果のハイライト
 set hlsearch
 
-" vimを終了してもundoできるように
+" vim を終了しても undo できるように
 if has('persistent_undo')
   set undofile
   set undodir=./.vimundo,~/.vim/undo
 endif
 
 "
-" neobundleの設定
+" neobundle の設定
 "
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -76,6 +76,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'skwp/vim-rspec'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'itchyny/lightline.vim'
 
 "
 " カラースキーム
@@ -85,7 +86,7 @@ set background=light
 colorscheme solarized
 
 "
-" vim-railsの設定
+" vim-rails の設定
 "
 let g:rails_default_file='config/database.yml'
 let g:rails_level = 4
@@ -116,7 +117,7 @@ aug RailsDictSetting
 aug END
 
 "
-" uniteとunite-railsの設定
+" unite と unite-rails の設定
 "
 function! UniteRailsSetting()
   nnoremap <buffer><C-H><C-H><C-H> :<C-U>Unite rails/view<CR>
@@ -138,13 +139,13 @@ aug MyAutoCmd
 aug END
 
 "
-" vim-coffee-scriptの設定
+" vim-coffee-script の設定
 "
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
 autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
 
 "
-" indent-guidesの設定
+" indent-guides の設定
 "
 let g:indent_guides_start_level=2
 let g:indent_guides_auto_colors=0
@@ -159,11 +160,18 @@ hi IndentGuidesEven ctermbg=13
 nmap <silent><Leader>ig <Plug>IndentGuidesToggle
 
 "
-" vim-slimの設定
+" vim-slim の設定
 "
 au BufRead,BufNewFile,BufReadPre *.slim   set filetype=slim
 
 "
-" vim-rspecの設定
+" vim-rspec の設定
 "
 let g:rspec_command = "bundle exec rspec"
+
+"
+" lightline の設定
+"
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
