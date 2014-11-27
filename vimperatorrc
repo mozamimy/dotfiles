@@ -22,6 +22,15 @@ hi HintActive color: #dc322f; background-color: #fdf6e3;
 hi ErrorMsg color:white; background-color: #cb4b16;
 
 "
+" copy.js
+"
+javascript <<EOM
+  liberator.globalVariables.copy_templates = [
+    { label: "markdown", value: "[%TITLE%](%URL%)" },
+  ];
+EOM
+
+"
 " Show the interface of Evernote Clearly
 "
 javascript <<EOM
