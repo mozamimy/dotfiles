@@ -23,6 +23,7 @@ hi ErrorMsg color:white; background-color: #cb4b16;
 
 "
 " copy.js
+" https://github.com/vimpr/vimperator-plugins
 "
 javascript <<EOM
   liberator.globalVariables.copy_templates = [
@@ -31,11 +32,7 @@ javascript <<EOM
 EOM
 
 "
-" Show the interface of Evernote Clearly
+" vimperator-clearly.js
+" https://github.com/mozamimy/vimperator-clearly.js
 "
-javascript <<EOM
-window.onload = function() {
-  require("chrome://readable-by-evernote/content/global.js");
-}
-EOM
-nnoremap e :js __readable_by_evernote.context_menu__call();<CR>
+nnoremap e :clearly<CR>
