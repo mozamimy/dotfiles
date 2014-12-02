@@ -1,0 +1,10 @@
+[user]
+  name = Moza USANE
+  email = mozamimy@quellencode.org
+
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+
+[github]
+  user = Mozamimy
