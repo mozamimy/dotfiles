@@ -77,6 +77,9 @@ if [ `uname` = "Darwin" ]; then
   alias flock="chflags uchg"
 fi
 
+# Firefox addon SDK
+alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
+
 #############
 # Functions #
 #############
