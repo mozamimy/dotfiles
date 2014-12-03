@@ -71,14 +71,14 @@ alias vim_sjis="vim -c ':e ++enc=sjis'"
 alias vim_cp932="vim -c ':e ++enc=cp932'"
 alias vim_euc="vim -c ':e ++enc=euc-jp'"
 
+# Firefox addon SDK
+alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
+
 # others
 if [ `uname` = "Darwin" ]; then
   alias funlock="chflags nouchg"
   alias flock="chflags uchg"
 fi
-
-# Firefox addon SDK
-alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 
 #############
 # Functions #
