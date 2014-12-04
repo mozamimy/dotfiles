@@ -74,6 +74,9 @@ alias vim_euc="vim -c ':e ++enc=euc-jp'"
 # Firefox addon SDK
 alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 
+# git
+alias gbsut="git branch --set-upstream-to"
+
 # others
 if [ `uname` = "Darwin" ]; then
   alias funlock="chflags nouchg"
