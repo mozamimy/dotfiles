@@ -50,6 +50,12 @@ if has('persistent_undo')
   set undodir=./.vimundo,~/.vim/undo
 endif
 
+" カーソルキーでのウィンドウサイズ変更
+nnoremap <silent><Down> <C-w>-
+nnoremap <silent><Up> <C-w>+
+nnoremap <silent><Left> <C-w><
+nnoremap <silent><Right> <C-w>>
+
 "
 " neobundle の設定
 "
