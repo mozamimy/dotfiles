@@ -11,3 +11,6 @@
 
 [alias]
   st = status
+  br = branch
+  co = checkout
+  pl = pull
