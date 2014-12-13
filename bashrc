@@ -76,6 +76,7 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 
 # git
 alias gbsut="git branch --set-upstream-to"
+alias git_change_tm="git commit --amend -C HEAD --date="
 
 # others
 if [ `uname` = "Darwin" ]; then
