@@ -76,7 +76,6 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 
 # git
 alias gbsut="git branch --set-upstream-to"
-alias git_change_tm="git commit --amend -C HEAD --date="
 
 # others
 if [ `uname` = "Darwin" ]; then
@@ -103,4 +102,9 @@ function mkdirr() {
 # search
 function search_in_file() {
   find . -name "*.$1" -print | xargs grep "$2"
+}
+
+# change commiting timestamps for git
+function change_commit_tm() {
+  git commit --amend -C HEAD --date=$1
 }
