@@ -79,6 +79,11 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 # git
 alias gbsut="git branch --set-upstream-to"
 
+# file and directory
+alias l="ls"
+alias la="ls -a"
+alias ll="ls -al"
+
 # others
 if [ `uname` = "Darwin" ]; then
   alias funlock="chflags nouchg"
