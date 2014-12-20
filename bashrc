@@ -72,6 +72,7 @@ alias brc="bundle exec rails c"
 alias vim_sjis="vim -c ':e ++enc=sjis'"
 alias vim_cp932="vim -c ':e ++enc=cp932'"
 alias vim_euc="vim -c ':e ++enc=euc-jp'"
+alias v="vim"
 
 # Firefox addon SDK
 alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
