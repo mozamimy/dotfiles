@@ -84,6 +84,8 @@ alias gbsut="git branch --set-upstream-to"
 alias l="ls"
 alias la="ls -a"
 alias ll="ls -al"
+alias rmr="rm -r"
+alias rmrf="rm -rf"
 
 # others
 if [ `uname` = "Darwin" ]; then
