@@ -87,7 +87,6 @@ alias ll="ls -al"
 alias rmr="rm -r"
 alias rmrf="rm -rf"
 
-# others
 if [ `uname` = "Darwin" ]; then
   alias funlock="chflags nouchg"
   alias flock="chflags uchg"
