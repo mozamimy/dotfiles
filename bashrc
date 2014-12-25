@@ -80,6 +80,9 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 # git
 alias gbsut="git branch --set-upstream-to"
 
+# tmux
+alias chs="tmux switch-client -t"
+
 # file and directory
 alias l="ls"
 alias la="ls -a"
