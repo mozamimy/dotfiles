@@ -94,6 +94,13 @@ set background=light
 colorscheme solarized
 
 "
+" lightline の設定
+"
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
+
+"
 " vim-coffee-script の設定
 "
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
@@ -106,10 +113,3 @@ augroup END
 " vim-slim の設定
 "
 au BufRead,BufNewFile,BufReadPre *.slim set filetype=slim
-
-"
-" lightline の設定
-"
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
