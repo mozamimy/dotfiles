@@ -101,6 +101,11 @@ let g:lightline = {
       \ }
 
 "
+" unite の設定
+"
+let g:unite_enable_start_insert=1
+
+"
 " vim-coffee-script の設定
 "
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
