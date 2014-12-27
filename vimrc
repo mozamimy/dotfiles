@@ -1,3 +1,6 @@
+set encoding=utf-8
+scriptencoding utf-8
+
 " vi コンパチを殺す
 set nocompatible
 
@@ -35,11 +38,14 @@ set listchars=tab:^\ ,trail:~
 " 行末スペースを可視化
 highlight WhitespaceEOL ctermbg=red guibg=red
 match WhitespaceEOL /\s\+$/
-autocmd WinEnter * match WhitespaceEOL /\s\+$/
+augroup vimrc
+  autocmd!
+  autocmd WinEnter * match WhitespaceEOL /\s\+$/
+augroup END
 
 " タブ切り替えのショートカット
-map <C-n> :tabn <Enter>
-map <C-p> :tabp <Enter>
+nnoremap <C-n> :tabn <Enter>
+nnoremap <C-p> :tabp <Enter>
 
 " 検索結果のハイライト
 set hlsearch
@@ -148,7 +154,10 @@ aug END
 " vim-coffee-script の設定
 "
 au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
-autocmd FileType coffee     setlocal sw=2 sts=2 ts=2 et
+augroup vimrc
+  autocmd!
+  autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
+augroup END
 
 "
 " indent-guides の設定
@@ -163,12 +172,12 @@ let g:indent_guides_space_guides=1
 hi IndentGuidesOdd  ctermbg=6
 hi IndentGuidesEven ctermbg=13
 " au FileType coffee,ruby,javascript,python,slim IndentGuidesEnable
-nmap <silent><Leader>ig <Plug>IndentGuidesToggle
+nnoremap <silent><Leader>ig <Plug>IndentGuidesToggle
 
 "
 " vim-slim の設定
 "
-au BufRead,BufNewFile,BufReadPre *.slim   set filetype=slim
+au BufRead,BufNewFile,BufReadPre *.slim set filetype=slim
 
 "
 " vim-rspec の設定
