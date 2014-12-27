@@ -1,9 +1,6 @@
 set encoding=utf-8
 scriptencoding utf-8
 
-" vi コンパチを殺す
-set nocompatible
-
 " スワップファイルとバックアップファイル
 set backup
 set swapfile
