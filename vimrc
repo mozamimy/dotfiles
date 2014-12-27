@@ -86,6 +86,10 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 
+" Ruby とか Rails とか
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'tpope/vim-rails'
+
 "
 " カラースキーム
 "
