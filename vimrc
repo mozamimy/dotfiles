@@ -80,6 +80,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'vim-scripts/matchit.zip'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplete.vim'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
@@ -108,7 +109,18 @@ let g:lightline = {
 "
 " unite の設定
 "
-let g:unite_enable_start_insert=1
+let g:unite_enable_start_insert = 1
+
+"
+" neocomplete の設定
+"
+let g:acp_enableAtStartup = 0
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#enable_fuzzy_completion = 1
+let g:neocomplete#min_keyword_length = 3
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#auto_completion_start_length = 2
 
 "
 " vim-coffee-script の設定
