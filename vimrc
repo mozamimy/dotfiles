@@ -89,6 +89,7 @@ NeoBundle 'ekalinin/Dockerfile.vim'
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'tpope/vim-endwise'
 
 "
 " カラースキーム
