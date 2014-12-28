@@ -53,6 +53,9 @@ if has('persistent_undo')
   set undodir=./.vimundo,~/.vim/undo
 endif
 
+" バックスペースでなんでも消す
+set backspace=indent,eol,start
+
 " カーソルキーでのウィンドウサイズ変更
 nnoremap <silent><Down> <C-w>-
 nnoremap <silent><Up> <C-w>+
