@@ -84,6 +84,7 @@ NeoBundle 'vim-scripts/matchit.zip'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'tpope/vim-dispatch'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
