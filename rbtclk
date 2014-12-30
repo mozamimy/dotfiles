@@ -17,7 +17,7 @@ Rbtclk.configure do |c|
   c.format = "%X"
 
   # black, red, green, yellow, blue, magenta, cyan and white are available.
-  c.color = "black"
+  c.color = "magenta"
 
   # You can specify limit time as seconds in countdown timer.
   c.time = "180"
