@@ -95,6 +95,11 @@ if [ `uname` = "Darwin" ]; then
   alias flock="chflags uchg"
 fi
 
+# tmux hack for open command
+if [ -n "$TMUX" ]; then
+  alias open="reattach-to-user-namespace -l open"
+fi
+
 #############
 # Functions #
 #############
