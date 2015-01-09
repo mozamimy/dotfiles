@@ -21,4 +21,7 @@ Rbtclk.configure do |c|
 
   # You can specify limit time as seconds in countdown timer.
   c.time = "180"
+
+  # --noalarm
+  c.no_alarm = false
 end
