@@ -62,6 +62,12 @@ nnoremap <silent><Up> <C-w>+
 nnoremap <silent><Left> <C-w><
 nnoremap <silent><Right> <C-w>>
 
+" .rbtclk に Ruby のシンタックスを適用
+augroup rbtclk
+  autocmd!
+  autocmd BufRead,BufNewFile rbtclk,.rbtclk set filetype=ruby
+augroup END
+
 "
 " neobundle の設定
 "
@@ -129,13 +135,16 @@ let g:neocomplete#auto_completion_start_length = 2
 "
 " vim-coffee-script の設定
 "
-au BufRead,BufNewFile,BufReadPre *.coffee   set filetype=coffee
-augroup vimrc
+augroup vim-coffee-script
   autocmd!
   autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
+  autocmd BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 augroup END
 
 "
 " vim-slim の設定
 "
-au BufRead,BufNewFile,BufReadPre *.slim set filetype=slim
+augroup vim-slim
+  autocmd!
+  autocmd BufRead,BufNewFile,BufReadPre *.slim set filetype=slim
+augroup END
