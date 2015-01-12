@@ -31,7 +31,7 @@ fi
 # prompt
 if [ ${EUID:-${UID}} = 0 ]; then
   # root
-  export PS1="[\#]\u@\h:\[\033[32m\]\W\[\033[0m\]> "
+  export PS1="\[\033[31m\][\#]\u@\h*:\[\033[32m\]\W\[\033[0m\]# "
 else
   # not root
   export PS1="[\#]\u@\h:\[\033[32m\]\W\[\033[0m\]> "
