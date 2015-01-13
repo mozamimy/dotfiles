@@ -108,6 +108,9 @@ if [ -n "$TMUX" ]; then
   alias open="reattach-to-user-namespace -l open"
 fi
 
+# systemctl
+alias sctl="sudo systemctl"
+
 #############
 # Functions #
 #############
