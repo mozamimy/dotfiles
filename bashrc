@@ -104,8 +104,10 @@ if [ `uname` = "Darwin" ]; then
 fi
 
 # tmux hack for open command
-if [ -n "$TMUX" ]; then
-  alias open="reattach-to-user-namespace -l open"
+if [ `uname` = "Darwin" ]; then
+  if [ -n "$TMUX" ]; then
+    alias open="reattach-to-user-namespace -l open"
+  fi
 fi
 
 # systemctl
