@@ -113,6 +113,11 @@ fi
 # systemctl
 alias sctl="sudo systemctl"
 
+# pacman
+alias pacman="sudo pacman"
+alias paci="sudo pacman -S"
+alias pacu="sudo pacman -Syu"
+
 #############
 # Functions #
 #############
