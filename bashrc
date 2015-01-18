@@ -115,10 +115,11 @@ fi
 # systemctl
 alias sctl="sudo systemctl"
 
-# pacman
+# pacman & yoaurt
 alias pacman="sudo pacman"
 alias paci="sudo pacman -S"
 alias pacu="sudo pacman -Syu"
+alias yaou="yaourt -Syua"
 
 #############
 # Functions #
