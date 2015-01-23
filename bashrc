@@ -115,11 +115,15 @@ fi
 # systemctl
 alias sctl="sudo systemctl"
 
-# pacman & yoaurt
+# pacman
 alias pacman="sudo pacman"
 alias paci="sudo pacman -S"
 alias pacu="sudo pacman -Syu"
+
+# yoaurt
+alias yao="yaourt"
 alias yaou="yaourt -Syua"
+alias rps="sudo lsof | grep deleted"
 
 #############
 # Functions #
