@@ -15,6 +15,10 @@ if [ `uname` = "Darwin" ]; then
   export CXX="/usr/local/bin/gcc-4.9"
 fi
 
+if [ `uname` = "Linux" ]; then
+  export PATH="/home/flost/bin":$PATH
+fi
+
 # RVM
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 export PATH=$HOME/.rvm/bin:$PATH
