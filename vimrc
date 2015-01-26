@@ -68,6 +68,9 @@ augroup rbtclk
   autocmd BufRead,BufNewFile rbtclk,.rbtclk set filetype=ruby
 augroup END
 
+" マルチバイト文字でずれないように
+set ambiwidth=double
+
 "
 " neobundle の設定
 "
