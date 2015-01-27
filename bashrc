@@ -80,6 +80,7 @@ alias mount_queen2="sshfs queen:/var/storage2 ~/mnt/queen"
 alias be="bundle exec"
 alias brs="bundle exec rails s"
 alias brc="bundle exec rails c"
+alias br="bundle exec rake"
 
 # vim
 alias vim_sjis="vim -c ':e ++enc=sjis'"
