@@ -99,6 +99,7 @@ NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ekalinin/Dockerfile.vim'
+NeoBundle 'tpope/vim-markdown'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
@@ -150,4 +151,12 @@ augroup END
 augroup vim-slim
   autocmd!
   autocmd BufRead,BufNewFile,BufReadPre *.slim set filetype=slim
+augroup END
+
+"
+" vim-markdown の設定
+"
+augroup vim-markdown
+  autocmd!
+  autocmd BufRead,BufNewFile,BufReadPre *.md set filetype=markdown
 augroup END
