@@ -106,6 +106,9 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
 
+" そのた
+NeoBundle 'kannokanno/previm'
+
 "
 " カラースキーム
 "
@@ -170,3 +173,8 @@ let g:markdown_fenced_languages = [
 \ 'sass',
 \ 'yaml',
 \]
+
+"
+" previm の設定
+"
+let g:previm_open_cmd = 'open a- FirefoxDeveloperEdition'
