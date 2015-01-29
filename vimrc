@@ -166,9 +166,9 @@ augroup END
 
 let g:markdown_fenced_languages = [
 \ 'ruby',
-\ 'bash',
+\ 'sh',
 \ 'javascript',
-\ 'coffe',
+\ 'coffee',
 \ 'css',
 \ 'sass',
 \ 'yaml',
