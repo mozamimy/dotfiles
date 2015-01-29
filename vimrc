@@ -160,3 +160,13 @@ augroup vim-markdown
   autocmd!
   autocmd BufRead,BufNewFile,BufReadPre *.md set filetype=markdown
 augroup END
+
+let g:markdown_fenced_languages = [
+\ 'ruby',
+\ 'bash',
+\ 'javascript',
+\ 'coffe',
+\ 'css',
+\ 'sass',
+\ 'yaml',
+\]
