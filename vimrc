@@ -106,7 +106,7 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
 
-" そのた
+" markdown
 NeoBundle 'kannokanno/previm'
 
 "
@@ -177,4 +177,4 @@ let g:markdown_fenced_languages = [
 "
 " previm の設定
 "
-let g:previm_open_cmd = 'open a- FirefoxDeveloperEdition'
+let g:previm_open_cmd = 'open -a FirefoxDeveloperEdition'
