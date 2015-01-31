@@ -67,15 +67,6 @@ alias stop_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/serv
 # mongodb
 alias mongod="mongod --config /usr/local/etc/mongod.conf"
 
-# mount remote machine
-alias mount_malice="sshfs malice:/home/flost ~/mnt/malice"
-alias mount_sh_malice="sshfs sh_malice:/home/flost ~/mnt/sh_malice"
-alias mount_alice="sshfs alice:/home/flost ~/mnt/alice"
-alias mount_sh_queen1="sshfs sh_queen:/var/storage1 ~/mnt/queen"
-alias mount_sh_queen2="sshfs sh_queen:/var/storage2 ~/mnt/queen"
-alias mount_queen1="sshfs queen:/var/storage1 ~/mnt/queen"
-alias mount_queen2="sshfs queen:/var/storage2 ~/mnt/queen"
-
 # ruby, rails
 alias be="bundle exec"
 alias brs="bundle exec rails s"
