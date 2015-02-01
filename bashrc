@@ -128,7 +128,6 @@ alias pacu="sudo pacman -Syu"
 # yoaurt
 alias yao="yaourt"
 alias yaou="yaourt -Syua"
-alias rps="sudo lsof | grep deleted"
 
 #############
 # Functions #
@@ -154,4 +153,9 @@ function search_in_file() {
 # change commiting timestamps for git
 function change_commit_tm() {
   git commit --amend -C HEAD --date=$1
+}
+
+# find binaries using old libraries.
+function rps() {
+  sudo lsof +c 0 | grep -w DEL | awk '1 { print $1 ": " $NF }' | sort -u
 }
