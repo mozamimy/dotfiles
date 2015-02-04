@@ -77,6 +77,7 @@ alias br="bundle exec rake"
 alias vim_sjis="vim -c ':e ++enc=sjis'"
 alias vim_cp932="vim -c ':e ++enc=cp932'"
 alias vim_euc="vim -c ':e ++enc=euc-jp'"
+alias vim_iso="vim -c ':e ++enc=iso-2022-jp'"
 alias v="vim"
 alias sv="sudo vim"
 
