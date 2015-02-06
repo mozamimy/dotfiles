@@ -71,6 +71,9 @@ augroup END
 " マルチバイト文字でずれないように
 set ambiwidth=double
 
+" 変更されたときに自動で読み直す
+set autoread
+
 "
 " neobundle の設定
 "
