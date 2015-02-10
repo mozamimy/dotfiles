@@ -123,7 +123,6 @@ alias yaou="yaourt -Syua"
 
 # remote desktop
 alias wakeupd="wol 40:61:86:0D:3D:33"
-alias rdp_tun="ssh -L 3389:192.168.11.3:3389 sh_queen"
 alias wakeupdr="ssh sh_queen wol 40:61:86:0D:3D:33"
 
 #############
