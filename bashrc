@@ -125,6 +125,10 @@ alias yaou="yaourt -Syua"
 alias wakeupd="wol 40:61:86:0D:3D:33"
 alias wakeupdr="ssh sh_queen wol 40:61:86:0D:3D:33"
 
+# shutdown
+alias poweroff="sudo poweroff"
+alias reboot="sudo reboot"
+
 #############
 # Functions #
 #############
