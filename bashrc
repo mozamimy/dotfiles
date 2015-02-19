@@ -162,3 +162,8 @@ function change_commit_tm() {
 function rps() {
   sudo lsof +c 0 | grep -w DEL | awk '1 { print $1 ": " $NF }' | sort -u
 }
+
+# say with specified lines
+function say_range() {
+  sed -n "$1,$2p" $4 | say -r $3
+}
