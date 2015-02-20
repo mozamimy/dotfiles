@@ -165,5 +165,5 @@ function rps() {
 
 # say with specified lines
 function say_range() {
-  sed -n "$1,$2p" $4 | say -r $3
+  sed -n "$1,$2p" $4 | say $3
 }
