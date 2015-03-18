@@ -132,6 +132,9 @@ alias reboot="sudo reboot"
 # virtual box
 alias VBoxManage="vboxmanage"
 
+# etc
+alias crontab="crontab -i"
+
 #############
 # Functions #
 #############
