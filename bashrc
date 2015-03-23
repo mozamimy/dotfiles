@@ -11,8 +11,8 @@ if [ `uname` = "Darwin" ]; then
   export PATH="/usr/texbin":$PATH
 
   # C/C++ compiler
-  export CC="/usr/local/bin/gcc-4.9"
-  export CXX="/usr/local/bin/gcc-4.9"
+  # export CC="/usr/local/bin/gcc-4.9"
+  # export CXX="/usr/local/bin/gcc-4.9"
 fi
 
 if [ `uname` = "Linux" ]; then
