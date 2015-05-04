@@ -158,7 +158,7 @@ function mkdirr() {
 
 # search
 function fts() {
-  find . -name "*.$1" -print | xargs grep "$2"
+  find . -name "$1" -print | xargs grep "$2"
 }
 
 # change commiting timestamps for git
