@@ -133,8 +133,8 @@ alias reboot="sudo reboot"
 alias VBoxManage="vboxmanage"
 
 # file system
-alias mount_dsl-share="mount_smbfs //fsq-c01/dsl-share ~/mnt/dsl-share"
-alias mount_dsl-archive="mount_smbfs //fsq-c01/dsl-archive ~/mnt/dsl-archive"
+alias mount_dsl-share="mount_smbfs //yuma-as@fsq-c01/dsl-share ~/mnt/dsl-share"
+alias mount_dsl-archive="mount_smbfs //yuma-as@fsq-c01/dsl-archive00 ~/mnt/dsl-archive"
 alias mount_md-home="mount_smbfs //fsr1/yuma-as ~/mnt/md-home"
 
 # etc
@@ -157,7 +157,7 @@ function mkdirr() {
 }
 
 # search
-function search_in_file() {
+function fts() {
   find . -name "*.$1" -print | xargs grep "$2"
 }
 
