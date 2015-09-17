@@ -87,9 +87,6 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 # git
 alias gbsut="git branch --set-upstream-to"
 
-# tmux
-alias chs="tmux switch-client -t"
-
 # file and directory
 alias l="ls"
 alias la="ls -a"
@@ -102,10 +99,11 @@ if [ `uname` = "Darwin" ]; then
   alias flock="chflags uchg"
 fi
 
-# tmux hack for open command
+# tmux hack for some commands
 if [ `uname` = "Darwin" ]; then
   if [ -n "$TMUX" ]; then
     alias open="reattach-to-user-namespace -l open"
+    alias osascript="reattach-to-user-namespace osascript"
   fi
 fi
 
@@ -129,7 +127,7 @@ alias wakeupdr="ssh sh_queen wol 40:61:86:0D:3D:33"
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
 
-# virtual box
+# VirtualBox
 alias VBoxManage="vboxmanage"
 
 # file system
@@ -174,4 +172,9 @@ function rps() {
 # say with specified lines
 function say_range() {
   sed -n "$1,$2p" $4 | say $3
+}
+
+# notify on OS X
+function notify() {
+  osascript -e "display notification \"$1\""
 }
