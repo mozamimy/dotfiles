@@ -80,6 +80,9 @@ augroup golang
   autocmd BufRead,BufNewFile *.go set noexpandtab tabstop=4 shiftwidth=4 nolist
 augroup END
 
+set completeopt-=preview
+set completeopt+=longest
+
 "
 " neobundle & plugins
 "
@@ -111,6 +114,9 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
+
+" golang
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()
 
