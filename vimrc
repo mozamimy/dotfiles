@@ -74,6 +74,12 @@ set ambiwidth=double
 " 変更されたときに自動で読み直す
 set autoread
 
+" golang用の設定
+augroup golang
+  autocmd!
+  autocmd BufRead,BufNewFile *.go set noexpandtab tabstop=4 shiftwidth=4 nolist
+augroup END
+
 "
 " neobundle & plugins
 "
