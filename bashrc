@@ -4,15 +4,14 @@
 
 if [ `uname` = "Darwin" ]; then
   # Homebrew and coreutils
-  export PATH="/Users/flost/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin":$PATH
+  export PATH="/Users/flost/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/go/libexec/bin":$PATH
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman":$MANPATH
 
   # texbin
   export PATH="/usr/texbin":$PATH
 
-  # C/C++ compiler
-  # export CC="/usr/local/bin/gcc-4.9"
-  # export CXX="/usr/local/bin/gcc-4.9"
+  # golang
+  export GOPATH=$HOME/usr/local/golang
 fi
 
 if [ `uname` = "Linux" ]; then
