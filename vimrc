@@ -75,20 +75,17 @@ set ambiwidth=double
 set autoread
 
 "
-" neobundle の設定
+" neobundle & plugins
 "
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
+
 call neobundle#begin(expand('~/.vim/bundle/'))
+
 NeoBundleFetch 'Shougo/neobundle.vim'
-call neobundle#end()
 filetype plugin on
 NeoBundleCheck
-
-"
-" プラグイン
-"
 
 " 全体の動作に関わるようなもの
 NeoBundle 'altercation/vim-colors-solarized'
@@ -109,8 +106,7 @@ NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
 
-" markdown
-NeoBundle 'kannokanno/previm'
+call neobundle#end()
 
 "
 " カラースキーム
