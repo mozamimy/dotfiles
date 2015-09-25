@@ -187,8 +187,3 @@ let g:markdown_fenced_languages = [
 \ 'sass',
 \ 'yaml',
 \]
-
-"
-" previm の設定
-"
-let g:previm_open_cmd = 'open -a FirefoxDeveloperEdition'
