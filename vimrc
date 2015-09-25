@@ -118,6 +118,9 @@ NeoBundle 'tpope/vim-endwise'
 " golang
 NeoBundle 'fatih/vim-go'
 
+" Rust
+NeoBundle 'rust-lang/rust.vim'
+
 call neobundle#end()
 
 "
