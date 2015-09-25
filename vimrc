@@ -83,6 +83,12 @@ augroup END
 set completeopt-=preview
 set completeopt+=longest
 
+" Rust用の設定
+augroup rust
+  autocmd!
+  autocmd BufRead,BufNewFile *.rs set tabstop=4 shiftwidth=4 nolist
+augroup END
+
 "
 " neobundle & plugins
 "
