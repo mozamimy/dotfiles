@@ -4,7 +4,7 @@
 
 if [ `uname` = "Darwin" ]; then
   # Homebrew and coreutils
-  export PATH="/Users/flost/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/go/libexec/bin":$PATH
+  export PATH="${HOME}/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/go/libexec/bin":$PATH
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman":$MANPATH
 
   # texbin
