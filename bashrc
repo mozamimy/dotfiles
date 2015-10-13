@@ -85,6 +85,7 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 
 # git
 alias gbsut="git branch --set-upstream-to"
+alias cdg='cd $(git rev-parse --show-toplevel)'
 
 # file and directory
 alias l="ls"
