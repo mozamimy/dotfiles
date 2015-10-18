@@ -109,6 +109,7 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-dispatch'
+NeoBundle 'thinca/vim-quickrun'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
