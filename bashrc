@@ -138,6 +138,10 @@ alias mount_md-home="mount_smbfs //fsr1/yuma-as ~/mnt/md-home"
 # etc
 alias crontab="crontab -i"
 
+# cookpad
+alias launch_proxy="ssh -fN awsproxy.vpc"
+alias kill_proxy="pkill -f 'ssh -fN awsproxy.vpc'"
+
 #############
 # Functions #
 #############
