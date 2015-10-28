@@ -128,9 +128,6 @@ NeoBundle 'fatih/vim-go'
 " Rust
 NeoBundle 'rust-lang/rust.vim'
 
-" memo
-NeoBundle 'neilagabriel/vim-geeknote'
-
 call neobundle#end()
 
 "
