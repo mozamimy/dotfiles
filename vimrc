@@ -68,6 +68,12 @@ augroup rbtclk
   autocmd BufRead,BufNewFile rbtclk,.rbtclk set filetype=ruby
 augroup END
 
+" *.schema に Ruby のシンタックスを適用
+augroup schema
+  autocmd!
+  autocmd BufRead,BufNewFile *.schema set filetype=ruby
+augroup END
+
 " マルチバイト文字でずれないように
 set ambiwidth=double
 
