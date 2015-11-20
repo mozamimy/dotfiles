@@ -22,6 +22,11 @@ fi
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 export PATH=$HOME/.rvm/bin:$PATH
 
+# rbenv
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
+
 # git compl.
 if [ `uname` = "Darwin" ]; then
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
