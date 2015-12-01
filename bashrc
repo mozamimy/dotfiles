@@ -187,4 +187,5 @@ function say_range() {
 # notify on OS X
 function notify() {
   osascript -e "display notification \"$1\""
+  say $1
 }
