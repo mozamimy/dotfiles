@@ -147,6 +147,7 @@ alias crontab="crontab -i"
 alias launch_proxy="ssh -fN awsproxy.vpc"
 alias kill_proxy="pkill -f 'ssh -fN awsproxy.vpc'"
 alias spec_setup="bundle exec rake cookpad:spec:setup[4]"
+alias fix_permissions_for_brew="sudo chown -R $(whoami):admin /usr/local"
 
 #############
 # Functions #
