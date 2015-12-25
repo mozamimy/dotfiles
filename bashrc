@@ -34,6 +34,9 @@ if [ `uname` = "Darwin" ]; then
   fi
 fi
 
+# vi mode
+set -o vi
+
 ###########
 # Display #
 ###########
