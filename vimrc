@@ -95,6 +95,9 @@ augroup rust
   autocmd BufRead,BufNewFile *.rs set tabstop=4 shiftwidth=4 filetype=rust
 augroup END
 
+" 開いているファイルのパスをだすやつ
+command CurrentFilePath echo expand("%:p")
+
 "
 " neobundle & plugins
 "
