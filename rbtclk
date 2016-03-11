@@ -5,7 +5,7 @@
 
 Rbtclk.configure do |c|
   # clock, countup and countdown are available.
-  c.mode = "cowntup"
+  c.mode = "cowntdown"
 
   # Font setting depends on Artii library.
   # https://github.com/miketierney/artii/tree/master/lib/figlet/fonts
