@@ -4,14 +4,14 @@
 
 if [ `uname` = "Darwin" ]; then
   # Homebrew and coreutils
-  export PATH="${HOME}/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/go/libexec/bin":$PATH
-  export MANPATH="/usr/local/opt/coreutils/libexec/gnuman":$MANPATH
+  export PATH="${HOME}/bin:/opt/brew/bin:/opt/brew/sbin:/opt/brew/opt/coreutils/libexec/gnubin:/opt/brew/opt/go/libexec/bin":$PATH
+  export MANPATH="/opt/brew/opt/coreutils/libexec/gnuman":$MANPATH
 
   # texbin
   export PATH="/usr/texbin":$PATH
 
   # golang
-  export GOPATH=$HOME/usr/local/golang
+  export GOPATH=$HOME/opt/brew/golang
 fi
 
 if [ `uname` = "Linux" ]; then
@@ -148,7 +148,6 @@ alias crontab="crontab -i"
 alias launch_proxy="ssh -fN awsproxy.vpc"
 alias kill_proxy="pkill -f 'ssh -fN awsproxy.vpc'"
 alias spec_setup="bundle exec rake cookpad:spec:setup[4]"
-alias fix_permissions_for_brew="sudo chown -R $(whoami):admin /usr/local"
 
 #############
 # Functions #
