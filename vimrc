@@ -120,6 +120,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'scrooloose/nerdtree'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
@@ -204,3 +205,8 @@ let g:markdown_fenced_languages = [
 \ 'sass',
 \ 'yaml',
 \]
+
+"
+" NERDTree の設定
+"
+nnoremap <C-[> :NERDTreeToggle <Enter>
