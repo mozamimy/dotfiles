@@ -209,4 +209,4 @@ let g:markdown_fenced_languages = [
 "
 " NERDTree の設定
 "
-nnoremap <C-[> :NERDTreeToggle <Enter>
+nnoremap <C-a> :NERDTreeToggle <Enter>
