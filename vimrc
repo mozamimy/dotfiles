@@ -16,8 +16,8 @@ set number
 " 常にステータスラインを表示
 set laststatus=2
 
-" カレント行をハイライト
-set cursorline
+" カレント行をハイライトしない
+set nocursorline
 
 " タブ幅とインデント
 set tabstop=2
