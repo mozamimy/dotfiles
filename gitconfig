@@ -1,6 +1,5 @@
 [user]
-  name = Moza USANE
-  email = mozamimy@quellencode.org
+  useConfigOnly = true
 
 [core]
   editor = vim
