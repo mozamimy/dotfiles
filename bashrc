@@ -136,11 +136,6 @@ alias reboot="sudo reboot"
 # VirtualBox
 alias VBoxManage="vboxmanage"
 
-# file system
-alias mount_dsl-share="mount_smbfs //yuma-as@fsq-c01/dsl-share ~/mnt/dsl-share"
-alias mount_dsl-archive="mount_smbfs //yuma-as@fsq-c01/dsl-archive00 ~/mnt/dsl-archive"
-alias mount_md-home="mount_smbfs //fsr1/yuma-as ~/mnt/md-home"
-
 # etc
 alias crontab="crontab -i"
 
