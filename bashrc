@@ -90,7 +90,7 @@ alias cfxrun="cfx run -b /Applications/FirefoxDeveloperEdition.app"
 
 # git
 alias gbsut="git branch --set-upstream-to"
-alias cdg='cd $(git rev-parse --show-toplevel)'
+alias cdg='cd "$(git rev-parse --show-toplevel)"'
 alias deploy_blog="bundle exec cheshirecat ./build 'git@github.com:mozamimy/mozamimy.github.com.git' master 'Moza USANE' 'mozamimy@quellencode.org'"
 
 # file and directory
