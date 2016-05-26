@@ -27,10 +27,14 @@ export PATH=$HOME/.rvm/bin:$PATH
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
-# git compl.
+# bash compl.
 if [ `uname` = "Darwin" ]; then
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
+  fi
+
+  if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
+      source `brew --prefix`/etc/bash_completion.d/vagrant
   fi
 fi
 
