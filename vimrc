@@ -126,6 +126,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'tpope/vim-markdown'
+NeoBundle 'puppetlabs/puppet-syntax-vim'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
@@ -204,3 +205,11 @@ let g:markdown_fenced_languages = [
 \ 'sass',
 \ 'yaml',
 \]
+
+"
+" puppet-syntax-vim の設定
+"
+augroup puppet-syntax-vim
+  autocmd!
+  autocmd BufRead,BufNewFile,BufReadPre *.pp set filetype=puppet
+augroup END
