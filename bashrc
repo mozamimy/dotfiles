@@ -38,6 +38,11 @@ if [ `uname` = "Darwin" ]; then
   fi
 fi
 
+# docker
+if [ `uname` = "Darwin" ]; then
+  eval "$(docker-machine env default)"
+fi
+
 ###########
 # Display #
 ###########
