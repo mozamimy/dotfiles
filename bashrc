@@ -47,13 +47,12 @@ fi
 # Display #
 ###########
 
-# prompt
 if [ ${EUID:-${UID}} = 0 ]; then
   # root
-  export PS1="\[\033[31m\][\#]\u@\h:\[\033[32m\]\W\[\033[0m\]# "
+  export PS1='\[\033[31m\][\t]\u@\h:\[\033[32m\]\W\[\033[0m\]# '
 else
   # not root
-  export PS1="[\#]\u@\h:\[\033[32m\]\W\[\033[0m\]> "
+  export PS1='[\t]\u@\h:\[\033[32m\]\W\[\033[0m\]\[\e[0;34m\]$(__git_ps1)\[\e[00m\] \[\e[0;35m\](-'\''x'\''-).oO( \[\e[00m\]\n> '
 fi
 
 # language
