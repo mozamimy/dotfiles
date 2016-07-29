@@ -152,6 +152,11 @@ alias launch_proxy="ssh -fN awsproxy.vpc"
 alias kill_proxy="pkill -f 'ssh -fN awsproxy.vpc'"
 alias spec_setup="bundle exec rake cookpad:spec:setup[4]"
 
+# aws credential
+alias ecckpd="envchain aws-cookpad"
+alias ecpv="envchain aws-personal-admin"
+alias ecckpdbe="envchain aws-cookpad bundle exec"
+
 #############
 # Functions #
 #############
