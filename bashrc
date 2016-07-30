@@ -47,6 +47,10 @@ fi
 # Display #
 ###########
 
+if [ `uname` = "Linux" ]; then
+  source /usr/share/git/git-prompt.sh
+fi
+
 if [ ${EUID:-${UID}} = 0 ]; then
   # root
   export PS1='\[\033[31m\][\t]\u@\h:\[\033[32m\]\W\[\033[0m\]# '
