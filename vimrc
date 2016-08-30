@@ -80,6 +80,12 @@ augroup grantfile
   autocmd BufRead,BufNewFile Grantfile,*.grant set filetype=ruby
 augroup END
 
+" .iam に Ruby のシンタックスを適用
+augroup iam
+  autocmd!
+  autocmd BufRead,BufNewFile *.iam set filetype=ruby
+augroup END
+
 " マルチバイト文字でずれないように
 set ambiwidth=double
 
