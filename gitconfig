@@ -1,6 +1,5 @@
 [user]
   useConfigOnly = true
-	signinkey = 4C62C3CD
 
 [core]
   editor = vim
@@ -14,5 +13,3 @@
   br = branch
   co = checkout
   pl = pull
-[gpg]
-	program = gpg2
