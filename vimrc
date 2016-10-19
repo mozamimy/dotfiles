@@ -139,6 +139,7 @@ NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'puppetlabs/puppet-syntax-vim'
+NeoBundle 'rhysd/vim-gfm-syntax'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
