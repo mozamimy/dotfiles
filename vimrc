@@ -86,6 +86,12 @@ augroup iam
   autocmd BufRead,BufNewFile *.iam set filetype=ruby
 augroup END
 
+" Vagrantfile に Ruby のシンタックスを適用
+augroup iam
+  autocmd!
+  autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
+
 " マルチバイト文字でずれないように
 set ambiwidth=double
 
