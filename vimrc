@@ -87,7 +87,7 @@ augroup iam
 augroup END
 
 " Vagrantfile に Ruby のシンタックスを適用
-augroup iam
+augroup vagrantfile
   autocmd!
   autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
