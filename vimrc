@@ -138,6 +138,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'Shougo/vimfiler.vim'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
@@ -232,3 +233,8 @@ augroup puppet-syntax-vim
   autocmd!
   autocmd BufRead,BufNewFile,BufReadPre *.pp set filetype=puppet
 augroup END
+
+"
+" vimfiler.vim の設定
+"
+nnoremap <C-f> :VimFiler <Enter>
