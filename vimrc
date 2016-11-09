@@ -56,6 +56,9 @@ endif
 " バックスペースでなんでも消す
 set backspace=indent,eol,start
 
+" インデント付けて折り返すやつ
+set breakindent
+
 " カーソルキーでのウィンドウサイズ変更
 nnoremap <silent><Down> <C-w>-
 nnoremap <silent><Up> <C-w>+
@@ -151,6 +154,7 @@ NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'tpope/vim-markdown'
 NeoBundle 'puppetlabs/puppet-syntax-vim'
 NeoBundle 'rhysd/vim-gfm-syntax'
+NeoBundle 'evanmiller/nginx-vim-syntax'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
