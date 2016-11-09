@@ -62,6 +62,10 @@ nnoremap <silent><Up> <C-w>+
 nnoremap <silent><Left> <C-w><
 nnoremap <silent><Right> <C-w>>
 
+" 空行をいい感じに入れる
+" http://vim-jp.org/vim-users-jp/2009/08/15/Hack-57.html
+nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
+
 " .rbtclk に Ruby のシンタックスを適用
 augroup rbtclk
   autocmd!
