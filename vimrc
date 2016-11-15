@@ -99,10 +99,10 @@ augroup vagrantfile
   autocmd BufRead,BufNewFile Vagrantfile set filetype=ruby
 augroup END
 
-" Nymphia, .nym に Ruby のシンタックスを適用
+" Nymphia, *.nym.rb に Ruby のシンタックスを適用
 augroup vagrantfile
   autocmd!
-  autocmd BufRead,BufNewFile Nymphia,*.nym set filetype=nymphia
+  autocmd BufRead,BufNewFile Nymphia,*.nym.rb set filetype=nymphia
 augroup END
 
 " マルチバイト文字でずれないように
