@@ -203,3 +203,23 @@ function notify() {
     say $1
   fi
 }
+
+# get rds endpoint (ckpd)
+function ckpdrds() {
+  envchain aws-cookpad aws rds describe-db-instances \
+    | jq '.DBInstances[].Endpoint.Address' \
+    | grep $1 \
+    | head -1 \
+    | sed -e 's/"//g' \
+    | tr -d '\r\n'
+}
+
+# get rds endpoint (bargain)
+function bargainrds() {
+  envchain aws-bargain aws rds describe-db-instances \
+    | jq '.DBInstances[].Endpoint.Address' \
+    | grep $1 \
+    | head -1 \
+    | sed -e 's/"//g' \
+    | tr -d '\r\n'
+}
