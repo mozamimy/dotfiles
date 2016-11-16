@@ -158,8 +158,14 @@ alias ebbe="envchain aws-bargain bundle exec"
 alias ep="envchain aws-personal-admin"
 
 #############
-# Functions #
+# Utilities #
 #############
+
+# URL encode/decode
+alias encurl="read -s tmp && echo $tmp | nkf -WwMQ | tr = % && unset tmp"
+alias decurl="read -s tmp && echo $tmp | nkf -w --url-input && unset tmp"
+
+# URL decode
 
 # make a directory and move into it
 function mkdirr() {
