@@ -130,10 +130,6 @@ alias pacu="sudo pacman -Syu"
 alias yao="yaourt"
 alias yaou="yaourt -Syua"
 
-# remote desktop
-alias wakeupd="wol 40:61:86:0D:3D:33"
-alias wakeupdr="ssh sh_queen wol 40:61:86:0D:3D:33"
-
 # shutdown
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
