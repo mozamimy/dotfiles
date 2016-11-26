@@ -154,6 +154,7 @@ alias ecbe="envchain aws-cookpad bundle exec"
 alias eb="envchain aws-bargain"
 alias ebbe="envchain aws-bargain bundle exec"
 alias ep="envchain aws-personal-admin"
+alias epbe="envchain aws-personal-admin bundle exec"
 
 #############
 # Utilities #
