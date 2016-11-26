@@ -38,6 +38,8 @@ if [ `uname` = "Darwin" ]; then
   fi
 fi
 
+export SHELL=`which bash`
+
 ###########
 # Display #
 ###########

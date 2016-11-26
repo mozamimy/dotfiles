@@ -162,6 +162,7 @@ NeoBundle 'puppetlabs/puppet-syntax-vim'
 NeoBundle 'rhysd/vim-gfm-syntax'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle 'mozamimy/nymphia.vim'
+NeoBundle 'mozamimy/itamae.vim'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
