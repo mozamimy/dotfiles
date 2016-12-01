@@ -13,3 +13,5 @@
   br = branch
   co = checkout
   pl = pull
+[commit]
+	gpgsign = true
