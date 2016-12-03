@@ -73,10 +73,12 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
 
-# postgresql
-export PGDATA=/usr/local/var/postgres
-alias run_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias stop_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log -m fast stop"
+if [ `uname` = "Darwin" ]; then
+  # postgresql
+  export PGDATA=/usr/local/var/postgres
+  alias run_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+  alias stop_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log -m fast stop"
+fi
 
 # mongodb
 alias mongod="mongod --config /usr/local/etc/mongod.conf"
