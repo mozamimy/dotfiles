@@ -143,6 +143,7 @@ alias VBoxManage="vboxmanage"
 
 # etc
 alias crontab="crontab -i"
+alias nomad53="envchain aws-personal-admin nomad53 en5 ZB3J3CGDM0KPR me.mozami.me"
 
 # cookpad
 alias launch_proxy="ssh -fN awsproxy.vpc"
