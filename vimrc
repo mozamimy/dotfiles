@@ -99,6 +99,12 @@ augroup rtbl
   autocmd BufRead,BufNewFile Routetable,*.rtbl set filetype=ruby
 augroup END
 
+" Groupfile, *.group に Ruby のシンタックスを適用
+augroup security_group
+  autocmd!
+  autocmd BufRead,BufNewFile Groupfile,*.group set filetype=ruby
+augroup END
+
 " Vagrantfile に Ruby のシンタックスを適用
 augroup vagrantfile
   autocmd!
