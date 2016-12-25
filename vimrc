@@ -94,7 +94,7 @@ augroup iam
 augroup END
 
 " Routetable, .rtbl に Ruby のシンタックスを適用
-augroup iam
+augroup rtbl
   autocmd!
   autocmd BufRead,BufNewFile Routetable,*.rtbl set filetype=ruby
 augroup END
