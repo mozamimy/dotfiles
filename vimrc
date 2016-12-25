@@ -93,10 +93,10 @@ augroup iam
   autocmd BufRead,BufNewFile *.iam set filetype=ruby
 augroup END
 
-" Routetable, .rbtl に Ruby のシンタックスを適用
+" Routetable, .rtbl に Ruby のシンタックスを適用
 augroup iam
   autocmd!
-  autocmd BufRead,BufNewFile Routetable,*.rbtl set filetype=ruby
+  autocmd BufRead,BufNewFile Routetable,*.rtbl set filetype=ruby
 augroup END
 
 " Vagrantfile に Ruby のシンタックスを適用
