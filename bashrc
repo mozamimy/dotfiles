@@ -22,6 +22,9 @@ fi
 [ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 export PATH=$HOME/.rvm/bin:$PATH
 
+# Cargo
+export PATH=$HOME/.cargo/bin:$PATH
+
 # rbenv
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
