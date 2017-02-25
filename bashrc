@@ -236,3 +236,7 @@ function bargainrds() {
     | sed -e 's/"//g' \
     | tr -d '\r\n'
 }
+
+function jqless() {
+  cat $1 | jq '.' -C | less -R
+}
