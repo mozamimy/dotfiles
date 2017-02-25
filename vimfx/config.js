@@ -17,7 +17,7 @@ vimfx.set('mode.normal.tab_select_previous', 'h');
 vimfx.set('mode.normal.window_new', '');
 vimfx.set('mode.normal.window_new_private', '');
 
-vimfx.addKeyOverrides([({hostname, pathname}) => hostname === 'inbox.google.com', ['j', 'k', 'u', 'e','?']]);
+vimfx.addKeyOverrides([({hostname, pathname}) => hostname === 'inbox.google.com', ['j', 'k', 'u', 'e','[', ']', '?']]);
 vimfx.addKeyOverrides([({hostname, pathname}) => hostname === 'drive.google.com' && pathname.startsWith('/drive/u/'), ['j', 'k', '?']]);
 vimfx.addKeyOverrides([({hostname, pathname}) => hostname === 'getpocket.com' && pathname.startsWith('/a/queue/list/'), ['j', 'k', 'u', 'o', 'a', '?']]);
 
