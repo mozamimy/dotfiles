@@ -42,6 +42,7 @@ if [ `uname` = "Darwin" ]; then
 fi
 
 export SHELL=`which bash`
+export GPG_TTY=$(tty)
 
 ###########
 # Display #
