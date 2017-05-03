@@ -16,7 +16,7 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = gpg1
+	program = gpg
 [merge "mergepbx"]
   name = Xcode project files merger
   driver = mergepbx %O %A %B
