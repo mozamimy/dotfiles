@@ -126,21 +126,9 @@ if [ `uname` = "Darwin" ]; then
   fi
 fi
 
-# systemctl
-alias sctl="sudo systemctl"
-
-# pacman
-alias pacman="sudo pacman"
-alias paci="sudo pacman -S"
-alias pacu="sudo pacman -Syu"
-
 # yoaurt
 alias yao="yaourt"
 alias yaou="yaourt -Syua"
-
-# shutdown
-alias poweroff="sudo poweroff"
-alias reboot="sudo reboot"
 
 # VirtualBox
 alias VBoxManage="vboxmanage"
