@@ -161,7 +161,10 @@ alias epbe="envchain aws-personal-admin bundle exec"
 alias encurl="read -s tmp && echo $tmp | nkf -WwMQ | tr = % && unset tmp"
 alias decurl="read -s tmp && echo $tmp | nkf -w --url-input && unset tmp"
 
-# URL decode
+# Post to Slack
+alias toot="envchain ckpd-slack-webhook toot"
+alias toot-infra="envchain ckpd-slack-webhook toot \"#infra\""
+alias toot-mozamimy-memo="envchain ckpd-slack-webhook toot \"#mozamimy-memo\""
 
 # make a directory and move into it
 function mkdirr() {
