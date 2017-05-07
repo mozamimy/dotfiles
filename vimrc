@@ -112,9 +112,15 @@ augroup vagrantfile
 augroup END
 
 " Nymphia, *.nym.rb に Ruby のシンタックスを適用
-augroup vagrantfile
+augroup nymphiafile
   autocmd!
   autocmd BufRead,BufNewFile Nymphia,*.nym.rb set filetype=nymphia
+augroup END
+
+" *.toml に TOML のシンタックスを適用
+augroup tomlfile
+  autocmd!
+  autocmd BufRead,BufNewFile *.toml set filetype=toml
 augroup END
 
 " マルチバイト文字でずれないように
@@ -176,6 +182,7 @@ NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle 'mozamimy/nymphia.vim'
 NeoBundle 'mozamimy/itamae.vim'
 NeoBundle 'itkq/fluentd-vim'
+NeoBundle 'cespare/vim-toml'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
