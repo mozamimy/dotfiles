@@ -123,6 +123,8 @@ if [ `uname` = "Darwin" ]; then
   if [ -n "$TMUX" ]; then
     alias open="reattach-to-user-namespace -l open"
     alias osascript="reattach-to-user-namespace osascript"
+    alias pbcopy="reattach-to-user-namespace pbcopy"
+    alias pbpaste="reattach-to-user-namespace pbpaste"
   fi
 fi
 
