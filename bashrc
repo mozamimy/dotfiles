@@ -128,13 +128,6 @@ if [ `uname` = "Darwin" ]; then
   fi
 fi
 
-# yoaurt
-alias yao="yaourt"
-alias yaou="yaourt -Syua"
-
-# VirtualBox
-alias VBoxManage="vboxmanage"
-
 # etc
 alias crontab="crontab -i"
 alias nomad53="envchain aws-personal-admin nomad53 en5 ZB3J3CGDM0KPR me.mozami.me"
@@ -158,10 +151,6 @@ alias epbe="envchain aws-personal-admin bundle exec"
 #############
 # Utilities #
 #############
-
-# URL encode/decode
-alias encurl="read -s tmp && echo $tmp | nkf -WwMQ | tr = % && unset tmp"
-alias decurl="read -s tmp && echo $tmp | nkf -w --url-input && unset tmp"
 
 # Post to Slack
 alias toot="envchain ckpd-slack-webhook toot"
