@@ -25,5 +25,3 @@ Rbtclk.configure do |c|
   # --noalarm
   c.no_alarm = false
 end
-
-aaaaa
