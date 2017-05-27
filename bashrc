@@ -15,7 +15,7 @@ if [ `uname` = "Darwin" ]; then
 fi
 
 if [ `uname` = "Linux" ]; then
-  export PATH="/home/flost/bin":$PATH
+  export PATH="/home/$USER/bin":$PATH
 fi
 
 # RVM
