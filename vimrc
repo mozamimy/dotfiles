@@ -117,6 +117,12 @@ augroup nymphiafile
   autocmd BufRead,BufNewFile Nymphia,*.nym.rb set filetype=nymphia
 augroup END
 
+" ELBfile, *.elb に Ruby のシンタックスを適用
+augroup elbfile
+  autocmd!
+  autocmd BufRead,BufNewFile ELBfile,*.elb set filetype=ruby
+augroup END
+
 " *.toml に TOML のシンタックスを適用
 augroup tomlfile
   autocmd!
