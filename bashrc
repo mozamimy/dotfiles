@@ -129,7 +129,6 @@ if [ `uname` = "Darwin" ]; then
 fi
 
 # etc
-alias crontab="crontab -i"
 alias nomad53="envchain aws-personal-admin nomad53 en5 ZB3J3CGDM0KPR me.mozami.me"
 
 # cookpad
