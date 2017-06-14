@@ -176,6 +176,7 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'fuenor/qfixgrep'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
@@ -203,6 +204,9 @@ NeoBundle 'fatih/vim-go'
 
 " Rust
 NeoBundle 'rust-lang/rust.vim'
+
+" 便利ツール
+NeoBundle 'glidenote/memolist.vim'
 
 call neobundle#end()
 
@@ -283,3 +287,12 @@ augroup END
 " vimfiler.vim の設定
 "
 nnoremap <C-f> :VimFiler <Enter>
+
+"
+" memolist.vim の設定
+"
+let g:memolist_path = "~/var/wonderland/memo"
+let g:memolist_memo_suffix = "md"
+nnoremap mn :MemoNew<CR>
+nnoremap ml :MemoList<CR>
+nnoremap mg :MemoGrep<CR>
