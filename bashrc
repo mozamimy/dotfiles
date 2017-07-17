@@ -104,7 +104,6 @@ alias sv="sudo vim"
 # git
 alias gbsut="git branch --set-upstream-to"
 alias cdg='cd "$(git rev-parse --show-toplevel)"'
-alias deploy_blog="bundle exec cheshirecat ./build 'git@github.com:mozamimy/mozamimy.github.com.git' master 'Moza USANE' 'mozamimy@quellencode.org'"
 
 # file and directory
 alias l="ls"
@@ -166,11 +165,6 @@ function mkdirr() {
   mkdir $1
 
   cd $aliased_current_dir$slash$1
-}
-
-# search
-function fts() {
-  find . -name "$1" -print | xargs grep "$2"
 }
 
 # change commiting timestamps for git
