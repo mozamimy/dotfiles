@@ -191,6 +191,7 @@ NeoBundle 'mozamimy/itamae.vim'
 NeoBundle 'itkq/fluentd-vim'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'hashivim/vim-terraform'
+NeoBundle 'othree/yajs.vim'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
