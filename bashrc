@@ -36,6 +36,7 @@ fi
 
 # Golang
 export GOPATH=$HOME/var/go
+export PATH=$GOPATH/bin:$PATH
 
 export SHELL=`which bash`
 export GPG_TTY=$(tty)
