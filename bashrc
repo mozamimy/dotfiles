@@ -9,9 +9,6 @@ if [ `uname` = "Darwin" ]; then
 
   # texbin
   export PATH="/usr/texbin":$PATH
-
-  # golang
-  export GOPATH=$HOME/opt/brew/golang
 fi
 
 if [ `uname` = "Linux" ]; then
@@ -40,6 +37,9 @@ if [ `uname` = "Darwin" ]; then
       source `brew --prefix`/etc/bash_completion.d/vagrant
   fi
 fi
+
+# Golang
+export GOPATH=$HOME/var/go
 
 export SHELL=`which bash`
 export GPG_TTY=$(tty)
