@@ -15,10 +15,6 @@ if [ `uname` = "Linux" ]; then
   export PATH="/home/$USER/bin":$PATH
 fi
 
-# RVM
-[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
-export PATH=$HOME/.rvm/bin:$PATH
-
 # Cargo
 export PATH=$HOME/.cargo/bin:$PATH
 
