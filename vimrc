@@ -148,6 +148,9 @@ set completeopt+=longest
 augroup rust
   autocmd!
   autocmd BufRead,BufNewFile *.rs set tabstop=4 shiftwidth=4 filetype=rust
+  autocmd FileType rust nmap gd <Plug>(rust-def)
+  autocmd FileType rust nmap gs <Plug>(rust-def-split)
+  autocmd FileType rust nmap gx <Plug>(rust-def-vertical)
 augroup END
 
 " 開いているファイルのパスをだすやつ
@@ -205,6 +208,7 @@ NeoBundle 'fatih/vim-go'
 
 " Rust
 NeoBundle 'rust-lang/rust.vim'
+NeoBundle 'racer-rust/vim-racer'
 
 " 便利ツール
 NeoBundle 'glidenote/memolist.vim'
@@ -297,3 +301,9 @@ let g:memolist_memo_suffix = "md"
 nnoremap mn :MemoNew<CR>
 nnoremap ml :MemoList<CR>
 nnoremap mg :MemoGrep<CR>
+
+"
+" racer-rust/vim-racer の設定
+"
+let g:racer_cmd = $HOME . '/.cargo/bin/racer'
+let g:racer_experimental_completer = 1
