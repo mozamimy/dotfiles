@@ -200,7 +200,7 @@ NeoBundle 'othree/yajs.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
-NeoBundle 'todesking/ruby_hl_lvar.vim'
+" NeoBundle 'todesking/ruby_hl_lvar.vim'
 NeoBundle 'mrkn/vim-cruby'
 
 " golang
