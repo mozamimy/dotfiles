@@ -214,9 +214,6 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'racer-rust/vim-racer'
 
-" 便利ツール
-NeoBundle 'glidenote/memolist.vim'
-
 call neobundle#end()
 
 "
@@ -296,15 +293,6 @@ augroup END
 " vimfiler.vim の設定
 "
 nnoremap <C-f> :VimFiler <Enter>
-
-"
-" memolist.vim の設定
-"
-let g:memolist_path = "~/var/wonderland/memo"
-let g:memolist_memo_suffix = "md"
-nnoremap mn :MemoNew<CR>
-nnoremap ml :MemoList<CR>
-nnoremap mg :MemoGrep<CR>
 
 "
 " racer-rust/vim-racer の設定
