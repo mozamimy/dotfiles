@@ -113,11 +113,6 @@ alias ll="ls -al"
 alias rmr="rm -r"
 alias rmrf="rm -rf"
 
-if [ `uname` = "Darwin" ]; then
-  alias funlock="chflags nouchg"
-  alias flock="chflags uchg"
-fi
-
 # tmux hack for some commands
 if [ `uname` = "Darwin" ]; then
   if [ -n "$TMUX" ]; then
@@ -169,19 +164,9 @@ function mkdirr() {
   cd $aliased_current_dir$slash$1
 }
 
-# change commiting timestamps for git
-function change_commit_tm() {
-  git commit --amend -C HEAD --date=$1
-}
-
 # find binaries using old libraries.
 function rps() {
   sudo lsof +c 0 | grep -w DEL | awk '1 { print $1 ": " $NF }' | sort -u
-}
-
-# say with specified lines
-function say_range() {
-  sed -n "$1,$2p" $4 | say $3
 }
 
 # notify on OS X
