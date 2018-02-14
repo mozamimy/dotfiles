@@ -180,6 +180,7 @@ NeoBundle 'tpope/vim-dispatch'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'fuenor/qfixgrep'
+NeoBundle 'simeji/winresizer'
 
 " シンタックスハイライトとか
 NeoBundle 'kchmck/vim-coffee-script'
