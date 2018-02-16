@@ -133,6 +133,7 @@ alias spec_setup="bundle exec rake cookpad:spec:setup[4]"
 
 # aws credential
 export AWS_REGION=ap-northeast-1
+export AWS_DEFAULT_REGION=ap-northeast-1
 alias ec="envchain aws-cookpad"
 alias ecbe="envchain aws-cookpad bundle exec"
 alias eb="envchain aws-bargain"
@@ -179,6 +180,14 @@ function notify() {
   fi
 }
 
+function jqless() {
+  cat $1 | jq '.' -C | less -R
+}
+
+#####################
+# Utilities for AWS #
+#####################
+
 # get rds endpoint (ckpd)
 function ckpdrds() {
   envchain aws-cookpad aws rds describe-db-instances \
@@ -189,16 +198,6 @@ function ckpdrds() {
     | tr -d '\r\n'
 }
 
-# get rds endpoint (bargain)
-function bargainrds() {
-  envchain aws-bargain aws rds describe-db-instances \
-    | jq '.DBInstances[].Endpoint.Address' \
-    | grep $1 \
-    | head -1 \
-    | sed -e 's/"//g' \
-    | tr -d '\r\n'
-}
-
-function jqless() {
-  cat $1 | jq '.' -C | less -R
+function continue-lifecycle-hook() {
+  aws autoscaling complete-lifecycle-action --lifecycle-hook-name $1 --auto-scaling-group-name $2 --lifecycle-action-token $3 --lifecycle-action-result CONTINUE
 }
