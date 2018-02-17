@@ -153,6 +153,11 @@ augroup rust
   autocmd FileType rust nmap gx <Plug>(rust-def-vertical)
 augroup END
 
+augroup js
+  autocmd!
+  autocmd BufRead,BufNewFile *.js set tabstop=4 shiftwidth=4 filetype=javascript
+augroup END
+
 " 開いているファイルのパスをだすやつ
 command CurrentFilePath echo expand("%:p")
 
