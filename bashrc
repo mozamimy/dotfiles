@@ -199,5 +199,5 @@ function ckpdrds() {
 }
 
 function continue-lifecycle-hook() {
-  aws autoscaling complete-lifecycle-action --lifecycle-hook-name $1 --auto-scaling-group-name $2 --lifecycle-action-token $3 --lifecycle-action-result CONTINUE
+  ec aws autoscaling complete-lifecycle-action --lifecycle-hook-name $1 --auto-scaling-group-name $2 --lifecycle-action-token $3 --lifecycle-action-result CONTINUE
 }
