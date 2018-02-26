@@ -184,6 +184,14 @@ function jqless() {
   cat $1 | jq '.' -C | less -R
 }
 
+function ssh-add-all() {
+  ssh-add ~/.ssh/id_rsa
+  ssh-add ~/.ssh/id_rsa.internal
+  ssh-add ~/.ssh/id_rsa.private
+  ssh-add ~/.ssh/cookpad2_aws.pem
+  ssh-add ~/.ssh/id_rsa.infra
+}
+
 #####################
 # Utilities for AWS #
 #####################
