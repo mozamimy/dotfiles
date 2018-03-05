@@ -206,11 +206,6 @@ NeoBundle 'othree/yajs.vim'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
-" NeoBundle 'todesking/ruby_hl_lvar.vim'
-" Pocke さんいわく Vim の Ruby インターフェースが壊れているとのことなので、
-" ワークアラウンド入りのものに一時的に変えてる
-" https://twitter.com/p_ck_/status/949626533739601920
-" NeoBundle 'pocke/ruby_hl_lvar.vim', 'workaround-require-ruby-file'
 NeoBundle 'mrkn/vim-cruby'
 
 " golang
