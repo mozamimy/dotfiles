@@ -179,6 +179,14 @@ function ssh-add-all() {
   ssh-add ~/.ssh/id_rsa.infra
 }
 
+function mugen-loop() {
+  while true
+  do
+    $1
+    sleep $2
+  done
+}
+
 #####################
 # Utilities for AWS #
 #####################
