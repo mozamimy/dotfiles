@@ -1,0 +1,6 @@
+{
+  "Keymap": {
+    "C-e": "peco.ToggleSelectionAndSelectNext"
+  },
+  "StickySelection": true
+}

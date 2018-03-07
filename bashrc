@@ -118,9 +118,10 @@ alias launch_proxy="ssh -fN awsproxy.vpc"
 alias kill_proxy="pkill -f 'ssh -fN awsproxy.vpc'"
 alias spec_setup="bundle exec rake cookpad:spec:setup[4]"
 
-# aws credential
+# AWS
 export AWS_REGION=ap-northeast-1
 export AWS_DEFAULT_REGION=ap-northeast-1
+export AWSSH_CSSH=tmux-nested-cssh
 alias ec="envchain aws-cookpad"
 alias ecbe="envchain aws-cookpad bundle exec"
 alias ed="envchain aws-cookpad-dev"
