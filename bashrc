@@ -128,6 +128,8 @@ alias ed="envchain aws-cookpad-dev"
 alias edbe="envchain aws-cookpad-dev bundle exec"
 alias em="envchain aws-cookpad-ml"
 alias embe="envchain aws-cookpad-ml bundle exec"
+alias en="envchain aws-cookpad-newgrads"
+alias enbe="envchain awscookpad-newgrads bundle exec"
 alias ep="envchain aws-personal-admin"
 alias epbe="envchain aws-personal-admin bundle exec"
 
