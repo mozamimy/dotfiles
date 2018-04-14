@@ -111,7 +111,6 @@ fi
 
 # etc
 alias nomad53="envchain aws-personal-admin nomad53 en7 ZB3J3CGDM0KPR me.mozami.me"
-alias quick_furik="furik activity -l | ruby -e 'print STDIN.read.gsub(\"@\", \"[at]\").gsub(/^###/, \"##\")'"
 
 # cookpad
 alias launch_proxy="ssh -fN awsproxy.vpc"
@@ -188,6 +187,11 @@ function mugen-loop() {
     $1
     sleep $2
   done
+}
+
+function quick_furik() {
+  since=${1:-0}
+  furik activity -l -d $since | ruby -e 'print STDIN.read.gsub("@", "[at]").gsub(/^###/, "##")' | sed '1,3d'
 }
 
 #####################
