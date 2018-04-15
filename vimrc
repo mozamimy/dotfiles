@@ -129,6 +129,12 @@ augroup tomlfile
   autocmd BufRead,BufNewFile *.toml set filetype=toml
 augroup END
 
+" *.jsonnet に Jsonnet のシンタックスを適用
+augroup jsonnet
+  autocmd!
+  autocmd BufRead,BufNewFile *.jsonnet set tabstop=4 shiftwidth=4 filetype=jsonnet
+augroup END
+
 " マルチバイト文字でずれないように
 set ambiwidth=double
 
@@ -153,6 +159,7 @@ augroup rust
   autocmd FileType rust nmap gx <Plug>(rust-def-vertical)
 augroup END
 
+" Javascript
 augroup js
   autocmd!
   autocmd BufRead,BufNewFile *.js set tabstop=4 shiftwidth=4 filetype=javascript
@@ -201,6 +208,7 @@ NeoBundle 'itkq/fluentd-vim'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'hashivim/vim-terraform'
 NeoBundle 'othree/yajs.vim'
+NeoBundle 'google/vim-jsonnet'
 
 " Ruby とか Rails とか
 NeoBundle 'basyura/unite-rails'
@@ -300,3 +308,7 @@ nnoremap <C-f> :VimFiler <Enter>
 "
 let g:racer_cmd = $HOME . '/.cargo/bin/racer'
 let g:racer_experimental_completer = 1
+
+"
+" gogle/vim-jsonnet の設定
+let g:jsonnet_fmt_options = '-n 4'
