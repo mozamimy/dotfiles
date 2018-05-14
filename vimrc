@@ -132,7 +132,7 @@ augroup END
 " *.jsonnet に Jsonnet のシンタックスを適用
 augroup jsonnet
   autocmd!
-  autocmd BufRead,BufNewFile *.jsonnet set tabstop=4 shiftwidth=4 filetype=jsonnet
+  autocmd BufRead,BufNewFile *.jsonnet set tabstop=4 shiftwidth=2 filetype=jsonnet
 augroup END
 
 " マルチバイト文字でずれないように
