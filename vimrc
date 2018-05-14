@@ -308,7 +308,3 @@ nnoremap <C-f> :VimFiler <Enter>
 "
 let g:racer_cmd = $HOME . '/.cargo/bin/racer'
 let g:racer_experimental_completer = 1
-
-"
-" gogle/vim-jsonnet の設定
-let g:jsonnet_fmt_options = '-n 4'
