@@ -135,6 +135,12 @@ augroup jsonnet
   autocmd BufRead,BufNewFile *.jsonnet set tabstop=2 shiftwidth=2 filetype=jsonnet
 augroup END
 
+" *.tf に Terraform のシンタックスを適用
+augroup terraform
+  autocmd!
+  autocmd BufRead,BufNewFile *.tf set tabstop=2 shiftwidth=2 filetype=terraform
+augroup END
+
 " マルチバイト文字でずれないように
 set ambiwidth=double
 
