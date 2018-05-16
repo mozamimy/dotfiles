@@ -179,7 +179,7 @@ function ssh-add-all() {
   ssh-add ~/.ssh/id_rsa.private
   ssh-add ~/.ssh/cookpad2_aws.pem
   ssh-add ~/.ssh/id_rsa.infra
-  ssh-add ~/.ssh/id_rsa.infra.newgrads
+  ssh-add ~/.ssh/id_rsa.cookpad.dev
 }
 
 function mugen-loop() {
