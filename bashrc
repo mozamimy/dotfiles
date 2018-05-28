@@ -199,9 +199,9 @@ function quick_furik() {
 # Utilities for AWS #
 #####################
 
-# get rds endpoint (ckpd)
-function ckpdrds() {
-  envchain aws-cookpad aws rds describe-db-instances \
+# get rds endpoint
+function rdslist() {
+  aws rds describe-db-instances \
     | jq '.DBInstances[].Endpoint.Address' \
     | grep $1 \
     | head -1 \
