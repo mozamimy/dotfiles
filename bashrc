@@ -195,6 +195,10 @@ function quick_furik() {
   furik activity -l -d $since | ruby -e 'print STDIN.read.gsub("@", "[at]").gsub(/^###/, "##")' | sed '1,3d'
 }
 
+function z_quickrenice() {
+  ps aux | grep "$1" | grep -v "grep" | awk '{print $2}' | xargs sudo renice $2
+}
+
 #####################
 # Utilities for AWS #
 #####################

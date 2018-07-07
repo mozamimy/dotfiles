@@ -129,10 +129,10 @@ augroup tomlfile
   autocmd BufRead,BufNewFile *.toml set filetype=toml
 augroup END
 
-" *.jsonnet に Jsonnet のシンタックスを適用
+" *.jsonnet, *.libsonnet に Jsonnet のシンタックスを適用
 augroup jsonnet
   autocmd!
-  autocmd BufRead,BufNewFile *.jsonnet set tabstop=2 shiftwidth=2 filetype=jsonnet
+  autocmd BufRead,BufNewFile *.jsonnet,*libsonnet set tabstop=2 shiftwidth=2 filetype=jsonnet
 augroup END
 
 " *.tf に Terraform のシンタックスを適用
@@ -314,3 +314,4 @@ nnoremap <C-f> :VimFiler <Enter>
 "
 let g:racer_cmd = $HOME . '/.cargo/bin/racer'
 let g:racer_experimental_completer = 1
+let g:rustfmt_autosave = 1
