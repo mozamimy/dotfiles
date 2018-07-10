@@ -142,7 +142,7 @@ alias toot-infra="envchain ckpd-slack-webhook toot \"#infra\""
 alias toot-mozamimy-memo="envchain ckpd-slack-webhook toot \"#mozamimy-memo\""
 
 # make a directory and move into it
-function mkdirr() {
+function z_mkdirr() {
   local aliased_current_dir=$(pwd)
   local current_dir=$(pwd -P)
   local slash=/
@@ -153,13 +153,8 @@ function mkdirr() {
   cd $aliased_current_dir$slash$1
 }
 
-# find binaries using old libraries.
-function rps() {
-  sudo lsof +c 0 | grep -w DEL | awk '1 { print $1 ": " $NF }' | sort -u
-}
-
 # notify on OS X
-function notify() {
+function z_notify() {
   osascript -e "display notification \"$1\""
 
   if [ -n "$TMUX" ]; then
@@ -169,11 +164,11 @@ function notify() {
   fi
 }
 
-function jqless() {
+function z_jqless() {
   cat $1 | jq '.' -C | less -R
 }
 
-function ssh-add-all() {
+function z_ssh-add-all() {
   ssh-add ~/.ssh/id_rsa
   ssh-add ~/.ssh/id_rsa.internal
   ssh-add ~/.ssh/id_rsa.private
@@ -182,7 +177,7 @@ function ssh-add-all() {
   ssh-add ~/.ssh/id_rsa.cookpad.dev
 }
 
-function mugen-loop() {
+function z_mugen-loop() {
   while true
   do
     $1
@@ -190,7 +185,7 @@ function mugen-loop() {
   done
 }
 
-function quick_furik() {
+function z_quick_furik() {
   since=${1:-0}
   furik activity -l -d $since | ruby -e 'print STDIN.read.gsub("@", "[at]").gsub(/^###/, "##")' | sed '1,3d'
 }
