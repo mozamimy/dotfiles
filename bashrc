@@ -129,6 +129,8 @@ alias em="envchain aws-cookpad-ml"
 alias embe="envchain aws-cookpad-ml bundle exec"
 alias en="envchain aws-cookpad-newgrads"
 alias enbe="envchain aws-cookpad-newgrads bundle exec"
+alias ei="envchain aws-cookpad-summer-intern"
+alias eibe="envchain aws-cookpad-summer-intern bundle exec"
 alias ep="envchain aws-personal-admin"
 alias epbe="envchain aws-personal-admin bundle exec"
 
