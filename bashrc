@@ -216,3 +216,12 @@ function rdslist() {
 function continue-lifecycle-hook() {
   ec aws autoscaling complete-lifecycle-action --lifecycle-hook-name $1 --auto-scaling-group-name $2 --lifecycle-action-token $3 --lifecycle-action-result CONTINUE
 }
+##############
+# Workaround #
+##############
+
+# Workaround a loading syntax.vim error like following snippet
+# E484: Can't open file /usr/local/share/vim/syntax/syntax.vim
+if [ `uname` = "Darwin" ]; then
+  export VIMRUNTIME=$(brew --prefix)/share/vim/vim81
+fi
