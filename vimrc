@@ -168,7 +168,7 @@ augroup END
 " Javascript
 augroup js
   autocmd!
-  autocmd BufRead,BufNewFile *.js set tabstop=4 shiftwidth=4 filetype=javascript
+  autocmd BufRead,BufNewFile *.js set tabstop=2 shiftwidth=2 filetype=javascript
 augroup END
 
 " 開いているファイルのパスをだすやつ
@@ -201,7 +201,6 @@ NeoBundle 'fuenor/qfixgrep'
 NeoBundle 'simeji/winresizer'
 
 " シンタックスハイライトとか
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'slim-template/vim-slim'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'tpope/vim-markdown'
@@ -213,7 +212,6 @@ NeoBundle 'mozamimy/itamae.vim'
 NeoBundle 'itkq/fluentd-vim'
 NeoBundle 'cespare/vim-toml'
 NeoBundle 'hashivim/vim-terraform'
-NeoBundle 'othree/yajs.vim'
 NeoBundle 'google/vim-jsonnet'
 
 " Ruby とか Rails とか
@@ -228,6 +226,10 @@ NeoBundle 'fatih/vim-go'
 " Rust
 NeoBundle 'rust-lang/rust.vim'
 NeoBundle 'racer-rust/vim-racer'
+
+" JavaScrpit
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'mxw/vim-jsx'
 
 call neobundle#end()
 
@@ -260,15 +262,6 @@ let g:neocomplete#enable_fuzzy_completion = 1
 let g:neocomplete#min_keyword_length = 3
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#auto_completion_start_length = 2
-
-"
-" vim-coffee-script の設定
-"
-augroup vim-coffee-script
-  autocmd!
-  autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
-  autocmd BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
-augroup END
 
 "
 " vim-slim の設定
