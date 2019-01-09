@@ -69,6 +69,10 @@ nnoremap <silent><Right> <C-w>>
 " http://vim-jp.org/vim-users-jp/2009/08/15/Hack-57.html
 nnoremap O :<C-u>call append(expand('.'), '')<Cr>j
 
+" きびきび動くように
+set lazyredraw
+set ttyfast
+
 " .rbtclk に Ruby のシンタックスを適用
 augroup rbtclk
   autocmd!
