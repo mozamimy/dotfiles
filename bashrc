@@ -178,8 +178,7 @@ function z_ssh-add-all() {
   ssh-add ~/.ssh/id_rsa.private
   ssh-add ~/.ssh/cookpad2_aws.pem
   ssh-add ~/.ssh/id_rsa.infra
-  # ssh-add ~/.ssh/id_rsa.cookpad.dev
-  ssh-add ~/.ssh/id_rsa.summer-intern.pem
+  ssh-add ~/.ssh/id_rsa.cookpad.dev
 }
 
 function z_mugen-loop() {
