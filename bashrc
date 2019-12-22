@@ -99,16 +99,6 @@ alias ll="ls -al"
 alias rmr="rm -r"
 alias rmrf="rm -rf"
 
-# tmux hack for some commands
-if [ `uname` = "Darwin" ]; then
-  if [ -n "$TMUX" ]; then
-    alias open="reattach-to-user-namespace -l open"
-    alias osascript="reattach-to-user-namespace osascript"
-    alias pbcopy="reattach-to-user-namespace pbcopy"
-    alias pbpaste="reattach-to-user-namespace pbpaste"
-  fi
-fi
-
 # etc
 alias nomad53="envchain aws-personal-admin nomad53 en7 ZB3J3CGDM0KPR me.mozami.me"
 
