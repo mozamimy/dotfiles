@@ -39,6 +39,11 @@ export PATH=$GOPATH/bin:$PATH
 export SHELL=`which bash`
 export GPG_TTY=$(tty)
 
+# nvim
+export EDITOR="nvim"
+export VISUAL="nvim"
+alias vim='nvim'
+
 ###########
 # Display #
 ###########
@@ -101,6 +106,7 @@ alias rmrf="rm -rf"
 
 # etc
 alias nomad53="envchain aws-personal-admin nomad53 en7 ZB3J3CGDM0KPR me.mozami.me"
+alias sb2md="npx @hogashi/sb2md@latest"
 
 # cookpad
 alias launch_proxy="ssh -fN awsproxy.vpc"
@@ -115,16 +121,10 @@ alias ec="envchain aws-cookpad"
 alias ecbe="envchain aws-cookpad bundle exec"
 alias ed="envchain aws-cookpad-dev"
 alias edbe="envchain aws-cookpad-dev bundle exec"
-alias em="envchain aws-cookpad-ml"
-alias embe="envchain aws-cookpad-ml bundle exec"
-alias en="envchain aws-cookpad-newgrads"
-alias enbe="envchain aws-cookpad-newgrads bundle exec"
-alias eo="envchain aws-cookpad-oicy"
-alias eobe="envchain aws-cookpad-oicy bundle exec"
-alias ei="envchain aws-cookpad-summer-intern"
-alias eibe="envchain aws-cookpad-summer-intern bundle exec"
 alias ep="envchain aws-personal-admin"
 alias epbe="envchain aws-personal-admin bundle exec"
+alias el="envchain aws-cookpad-hako-lambda"
+alias elbe="envchain aws-cookpad-hako-lambda bundle exec"
 
 #############
 # Utilities #
@@ -168,8 +168,9 @@ function z_ssh-add-all() {
   ssh-add ~/.ssh/id_rsa.private
   ssh-add ~/.ssh/cookpad2_aws.pem
   ssh-add ~/.ssh/id_rsa.infra
+  ssh-add ~/.ssh/id_ed25519.infra-2204
   # ssh-add ~/.ssh/id_rsa.cookpad.dev
-  ssh-add ~/.ssh/id_rsa.summer-intern.pem
+  # ssh-add ~/.ssh/id_rsa.summer-intern.pem
 }
 
 function z_mugen-loop() {
@@ -206,3 +207,11 @@ function rdslist() {
 function continue-lifecycle-hook() {
   ec aws autoscaling complete-lifecycle-action --lifecycle-hook-name $1 --auto-scaling-group-name $2 --lifecycle-action-token $3 --lifecycle-action-result CONTINUE
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/yuma-asada/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)

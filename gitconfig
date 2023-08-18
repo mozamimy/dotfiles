@@ -2,7 +2,7 @@
   useConfigOnly = true
 
 [core]
-  editor = vim
+  editor = nvim
   excludesfile = ~/.gitignore
 
 [github]
@@ -20,7 +20,22 @@
 [gpg]
   program = gpg
 
+[pull]
+  rebase = false
+
+[merge]
+  tool = nvimdiff
+[difftool "nvimdiff"]
+  cmd = "nvim -R -d -c \"wincmd l\" -d \"$LOCAL\" \"$REMOTE\""
+[mergetool "nvimdiff"]
+  cmd = "nvim -d -c \"4wincmd w | wincmd J\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"  \"$MERGED\""
+
 [merge "mergepbx"]
   name = Xcode project files merger
   driver = mergepbx %O %A %B
   note = auto-generated configuration by cpad2 upgrade
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
