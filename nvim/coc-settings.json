@@ -1,0 +1,25 @@
+{
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": [
+        "terraform",
+        "tf"
+      ],
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "jsonnet": {
+      "command": "jsonnet-language-server",
+      "args": ["-t"],
+      "rootPatterns": [".git/", "jsonnetfile.json"],
+      "filetypes": ["jsonnet","libsonnet"]
+    }
+  },
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "rust",
+    "go"
+  ]
+}
