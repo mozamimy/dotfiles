@@ -20,7 +20,7 @@ Jetpack 'neoclide/coc.nvim', { 'branch': 'release' }
 Jetpack 'jiangmiao/auto-pairs'
 
 " Style
-Jetpack 'altercation/vim-colors-solarized'
+Jetpack 'lifepillar/vim-solarized8', { 'branch': 'neovim' }
 Jetpack 'itchyny/lightline.vim'
 
 " Language independent
@@ -31,7 +31,8 @@ call jetpack#end()
 " Color scheme
 syntax enable
 set background=light
-colorscheme solarized
+set termguicolors
+colorscheme solarized8_high
 
 " Terraform
 let g:terraform_fmt_on_save=1

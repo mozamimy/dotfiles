@@ -127,6 +127,9 @@ alias epbe="envchain aws-personal-admin bundle exec"
 alias el="envchain aws-cookpad-hako-lambda"
 alias elbe="envchain aws-cookpad-hako-lambda bundle exec"
 
+# tig with colors
+alias tig='TERM=xterm-256color tig'
+
 #############
 # Utilities #
 #############
