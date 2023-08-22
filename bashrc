@@ -4,8 +4,8 @@
 
 if [ `uname` = "Darwin" ]; then
   # Homebrew and coreutils
-  export PATH="${HOME}/bin:/opt/brew/bin:/opt/brew/sbin:/opt/brew/opt/coreutils/libexec/gnubin:/opt/brew/opt/go/libexec/bin":$PATH
-  export MANPATH="/opt/brew/opt/coreutils/libexec/gnuman":$MANPATH
+  export PATH="${HOME}/bin:/opt/brew/bin:/opt/brew/sbin:/opt/homebrew/opt/coreutils/libexec/gnubin:/opt/brew/opt/go/libexec/bin":$PATH
+  export MANPATH="/opt/homebrew/opt/coreutils/libexec/gnuman":$MANPATH
 fi
 
 if [ `uname` = "Linux" ]; then
