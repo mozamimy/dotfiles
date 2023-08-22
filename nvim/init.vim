@@ -32,7 +32,7 @@ call jetpack#end()
 syntax enable
 set background=light
 set termguicolors
-colorscheme solarized8_high
+colorscheme solarized8
 
 " Terraform
 let g:terraform_fmt_on_save=1
