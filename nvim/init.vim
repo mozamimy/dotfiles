@@ -18,6 +18,7 @@ call jetpack#begin()
 Jetpack 'tani/vim-jetpack', {'opt': 1}
 Jetpack 'neoclide/coc.nvim', { 'branch': 'release' }
 Jetpack 'jiangmiao/auto-pairs'
+Jetpack 'github/copilot.vim'
 
 " Style
 Jetpack 'lifepillar/vim-solarized8', { 'branch': 'neovim' }
@@ -65,3 +66,7 @@ endfunction
 
 " Filetype
 autocmd BufNewFile,BufRead *.scheme set filetype=ruby
+
+" Copilot
+imap <silent> <C-N> <Plug>(copilot-next)
+imap <silent> <C-P> <Plug>(copilot-previous)
