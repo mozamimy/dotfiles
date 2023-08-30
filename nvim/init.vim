@@ -66,7 +66,3 @@ endfunction
 
 " Filetype
 autocmd BufNewFile,BufRead *.scheme set filetype=ruby
-
-" Copilot
-imap <silent> <C-N> <Plug>(copilot-next)
-imap <silent> <C-P> <Plug>(copilot-previous)
